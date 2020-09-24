@@ -3,3 +3,7 @@ db.test.find()
 
 //traz os dados com uma organizaçao visual maior
 db.test.find().pretty()
+
+
+//buscando o primeiro registro
+db.test.findOne()
