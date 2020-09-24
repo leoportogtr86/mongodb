@@ -1,0 +1,1 @@
+db.test.insert({ nome: "Júlio", idade: 78 })
