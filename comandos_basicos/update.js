@@ -11,3 +11,7 @@ db.test.update({ nome: "Cebola" }, { $set: { nome: "Cebolão" } })
 //atualizando multiplos registros que atendam uma condicao. Usamos o "multi: 1 (ou true)"
 //por padrao, o mongo so altera o primeiro registro que atender certa condicao
 db.test.update({ nome: "Leo" }, { $set: { nome: "Leonardo" } }, { multi: 1 })
+
+//alterando vários documentos que atendam a uma condição
+
+db.pessoas.updateMany({ nome: "Carrie" }, { $set: { nome: "Carry" } })
